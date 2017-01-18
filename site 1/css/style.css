@@ -1,0 +1,297 @@
+﻿@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700&subset=latin,cyrillic-ext,cyrillic);
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%; }
+
+.wr {
+  width: 940px;
+  margin: 0 auto;
+  position: relative; }
+
+.red {
+  color: #fa5c65; }
+
+.more {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #fa5c65;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .more:after {
+    content: '➔'; }
+
+#top {
+  background-image: url("../img/Photo.jpg");
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: 100vw;
+  background-repeat: no-repeat; }
+  #top .wr {
+  	display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    height: 100%; }
+    #top .wr header {
+      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      justify-content: space-between;
+      align-self: flex-start;
+
+	  display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      -webkit-flex-basis: 100%;
+      -webkit-justify-content: space-between;
+      -webkit-align-self: flex-start;
+       }
+      #top .wr header .logo {
+        display: block;
+        width: 140px;
+        height: 74px;
+        background: url("../img/Logo.png") no-repeat; }
+      #top .wr header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-top: 25px; }
+        #top .wr header nav ul li {
+          margin-left: 30px; }
+          #top .wr header nav ul li a {
+            color: #263742;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none; }
+            #top .wr header nav ul li a:hover {
+              color: #fa5c65; }
+          #top .wr header nav ul li .social a {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            background: url("../img/Social-Icons.png") no-repeat;
+            -webkit-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transition: all 0.3s ease; }
+            #top .wr header nav ul li .social a:hover {
+              -webkit-filter: grayscale(0%);
+              -o-filter: grayscale(0%);
+              -moz-filter: grayscale(0%);
+              -ms-filter: grayscale(0%);
+              filter: grayscale(0%); }
+            #top .wr header nav ul li .social a .tw {
+              background-position: 0 0; }
+            #top .wr header nav ul li .social a .fb {
+              background-position: 100% 0; }
+    #top .wr .sloganCont {
+      max-width: 58%; }
+      #top .wr .sloganCont h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        color: #314a5b; }
+      #top .wr .sloganCont h4 {
+        position: relative;
+        color: #314a5b;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        margin: 20px 0 60px 0; }
+      #top .wr .sloganCont .btn {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        margin-top: 15px; }
+        #top .wr .sloganCont .btn span {
+          color: white;
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          padding: 25px 35px;
+          background-color: #fa5c65;
+          border-radius: 7px;
+          text-transform: uppercase; }
+
+#snippets {
+  position: relative; }
+  #snippets .wr > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: 80px 0; }
+    #snippets .wr > ul li {
+      width: 33.33333%;
+      box-sizing: border-box;
+      padding-right: 55px; }
+      #snippets .wr > ul li h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #314a5b; }
+      #snippets .wr > ul li p {
+        color: #9aa0ab;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 400; }
+
+#portfolio {
+  margin: 80px 0; }
+  #portfolio .wr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-between; }
+    #portfolio .wr .col {
+      width: 49%; }
+      #portfolio .wr .col:first-of-type img {
+        max-width: 100%; }
+      #portfolio .wr .col:nth-of-type(2) {
+        align-self: center; }
+      #portfolio .wr .col h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #314a5b;
+        margin: 0; }
+      #portfolio .wr .col h4 {
+        color: #314a5b;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400; }
+      #portfolio .wr .col p {
+        color: #9aa0ab;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 400; }
+
+#team .wr .row1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #314a5b;
+  margin: 0; }
+#team .wr .row1 h3 {
+  color: #9aa0ab;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0; }
+#team .wr .row2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px; }
+  #team .wr .row2 li {
+    display: flex;
+    flex-wrap: wrap;
+
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    width: 33.33333%;
+    padding-right: 35px;
+    box-sizing: border-box; }
+    #team .wr .row2 li .col1 {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      background-color: #9aa0ab; }
+    #team .wr .row2 li .col2 {
+      width: calc(100% - 128px);
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #team .wr .row2 li .col2 h3 {
+        color: #314a5b;
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0; }
+      #team .wr .row2 li .col2 h4 {
+        color: #fa5c65;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0; }
+      #team .wr .row2 li .col2 p {
+        color: #9aa0ab;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px; }
+#team .wr .row3 {
+  text-align: right; }
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  min-height: 90px;
+  border-top: 1px solid #e6eaed; }
+  footer .col1 a {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+    background: url("../img/Social-Icons2.png") no-repeat 0 center;
+    opacity: 0.8;
+    transition: all 0.3s ease; }
+    footer .col1 a.tw {
+      background-position-x: 0; }
+    footer .col1 a.ins {
+      background-position-x: 36%; }
+    footer .col1 a.fb {
+      background-position-x: 68%; }
+    footer .col1 a.gp {
+      background-position-x: 100%; }
+    footer .col1 a:hover {
+      opacity: 1; }
+  footer .col2 {
+    color: #9aa0ab;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400; }
+.col1{
+	margin-left: 60px;
+}

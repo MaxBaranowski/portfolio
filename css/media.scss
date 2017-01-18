@@ -1,0 +1,280 @@
+@media screen and (min-width : 980px) and (max-width : 1200px) {}
+@media screen and (min-width : 481px) and (max-width : 888px) {
+    .line {
+        display: block !important;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    #mouse {
+        display: none;
+    }
+
+    .slider {
+        margin-bottom: 20px !important;
+        min-height: 190px;
+        height: 53vh;
+
+        .slider-item {
+            min-height: 170px;
+            height: 45vh;
+            min-width: 50px;
+            margin-left: 5px;
+            // width: 90%;
+            overflow: auto;
+        }
+
+        .slider-description {
+            margin-top: 5vh;
+            margin-left: 5px;
+
+            p {
+                margin-left: 0 !important;
+                font-size: 10px;
+            }
+
+            a {
+                margin-left: 0 !important;
+            }
+        }
+
+        .slider-image {
+            min-width: 50px !important;
+            height: 70px !important;
+            height: 30vh !important;
+        }
+    }
+
+    .get-in-touch {
+        height: auto !important;
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        form {
+            margin-top: 0 !important;
+
+            #input-text {
+                height: 35px !important;
+            }
+        }
+    }
+
+    .skills {
+        .skills-show {
+            display: none;
+        }
+
+        .skills-inside {
+            float: left;
+            width: 90%;
+            display: block;
+            margin: 0 auto !important;
+            float: none;
+        }
+    }
+
+    .content {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+
+        p {
+            overflow-x: visible;
+            width: 120% !important;
+            margin-top: 50px;
+        }
+
+        .others {
+            p {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    #resume-btn {
+        margin-bottom: 40px !important;
+        display: block;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .line{
+       display: block !important;
+    }
+    // styles for site pages
+    .site-header {
+        h1 {
+            font-size: 36px !important;
+            padding: 0 !important;
+            line-height: 40px !important;
+        }
+    }
+
+    body,
+    html {
+        overflow-x: hidden !important;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        /*для вертикального*/
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .skills {
+        .skills-show {
+            display: none;
+        }
+
+        .skills-inside {
+            float: left;
+            width: 90%;
+            display: block;
+            margin: 0 auto !important;
+            float: none;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin-left: 4px;
+    }
+
+    header {
+        display: none;
+        width: 230px;
+        padding: 0;
+        z-index: 200;
+    }
+
+    nav {
+        margin: 10vh 0 0 !important;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .cover-text {
+        margin: 30vh 0 10vh !important;
+    }
+
+    .mouseUp {
+        bottom: -5vh !important;
+    }
+
+    .mouseDown {
+        bottom: -15vh !important;
+    }
+
+    .slider {
+        margin-bottom: 0 !important;
+        height: 300px;
+
+        .slider-item {
+            height: 280px;
+            min-width: 250px;
+            margin-left: 5px;
+            width: 90%;
+            overflow: auto;
+        }
+
+        .slider-description {
+            margin-left: 20px;
+        }
+
+        .slider-image {
+            min-width: 150px !important;
+            height: 170px !important;
+        }
+    }
+
+    p {
+        margin: 30px 0 !important;
+    }
+
+    .get-in-touch {
+        // height: 450px !important;
+        h3 {
+            font-size: 17px !important;
+            letter-spacing: 8px;
+            margin-left: 4px;
+        }
+
+        form {
+            margin-top: 0 !important;
+
+            #input-text {
+                height: 35px !important;
+            }
+        }
+    }
+
+    form {
+        margin-top: 30px !important;
+    }
+
+    .contact {
+        margin-top: 50px;
+    }
+
+    .rights {
+        display: none;
+    }
+
+    .timeline {
+        margin-left: 13.3333%;
+        padding: 0;
+    }
+    // about page
+    .container {
+        .site-body {
+            .content {
+                margin-top: 30px !important;
+
+                p {
+                    overflow-x: visible;
+                    width: 145%;
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+
+                .descr {
+                    h3 {
+                        padding: 0;
+                        margin: 10px 0 0;
+                    }
+
+                    p {
+                        margin-top: 50px !important;
+                        margin-bottom: 30px !important;
+                    }
+
+                    .others {
+                        h3 {
+                            margin-top: 0 !important;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #resume-btn {
+        display: block;
+        margin-bottom: 40px !important;
+    }
+}
