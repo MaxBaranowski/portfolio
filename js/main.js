@@ -14,9 +14,30 @@ $(document).ready(function() {
         }
     });
 
-    $('#menu').click(function() {
-        $('.line').toggleClass('trigger');
-    });
+    function menu_click(){
+        var set = false;
+        return function(){
+            $('header').toggleClass('show-menu');
+            $('.line').toggleClass('trigger');
+            if(!set){
+                setTimeout(function(){
+                    $('body').toggleClass('stop-scroll');
+                    $('#menu').css('position','fixed');
+                },900);
+                return set = true;
+            }else{
+
+                $('body').toggleClass('stop-scroll');
+                $('#menu').css('position','absolute');
+                return set = false;
+            }
+        }
+    }
+
+    var hamburger = menu_click();
+
+    $('#menu').click(hamburger);
+
 
 
 });

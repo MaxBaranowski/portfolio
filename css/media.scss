@@ -9,7 +9,17 @@
     }
 
     header {
-        display: none;
+        display: block;
+        width: 250px;
+        padding: 0;
+        z-index: 200;
+        position: fixed;
+        left: -100%;
+        overflow: hidden;
+    }
+
+    .footer > ul{
+        margin-left: 30px;
     }
 
     .container {
@@ -21,7 +31,7 @@
     }
 
     .slider {
-        margin-bottom: 20px !important;
+        margin-bottom: 20px;
         min-height: 190px;
         height: 53vh;
 
@@ -39,12 +49,12 @@
             margin-left: 5px;
 
             p {
-                margin-left: 0 !important;
+                margin-left: 0;
                 font-size: 10px;
             }
 
             a {
-                margin-left: 0 !important;
+                margin-left: 0;
             }
         }
 
@@ -106,7 +116,15 @@
         margin-bottom: 40px !important;
         display: block;
     }
+    nav {
+        ul{
+            padding: 0;
+            line-height: 45px;
+            text-align: center;
+        }
+    }
 }
+
 @media screen and (min-width : 320px) and (max-width : 480px) {
     .line{
        display: block !important;
@@ -130,6 +148,8 @@
 
     #menu {
         display: block;
+        position: absolute;
+        z-index: 200;
     }
 
     .skills {
@@ -153,14 +173,30 @@
     }
 
     header {
-        display: none;
-        width: 230px;
+        display: block;
+        width: 100vw;
         padding: 0;
-        z-index: 200;
+        z-index: 100;
+        position: fixed;
+        left: -100%;
+        overflow: visible;
+
+    }
+
+    .footer {
+        display: none;
+        ul{
+            margin-left: 30px;
+        }
     }
 
     nav {
         margin: 10vh 0 0 !important;
+        ul{
+            padding: 0 !important;
+            line-height: 45px;
+            text-align: center;
+        }
     }
 
     .container {

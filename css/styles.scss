@@ -30,6 +30,8 @@ header {
     float: left;
     box-shadow: 0.02px 0 10px 0 #a2a2a2;
     z-index: 1;
+    -webkit-transition: left ease-out 1s;
+    transition: left ease-out 1s;
 
     nav {
         margin: 50% 0 0;
@@ -105,9 +107,11 @@ header {
 .footer {
     position: fixed;
     bottom: 5%;
+    width: inherit;
 
     ul {
         padding: 0;
+
 
         li {
             width: 20px;
@@ -118,42 +122,42 @@ header {
             overflow: auto;
 
             &:nth-child(1) {
-                background-image: url('/img/vk-off.png');
+                background-image: url('../img/vk-off.png');
                 width: 32px;
                 height: 32px;
 
                 &:hover {
-                    background-image: url('/img/vk-on.png');
+                    background-image: url('../img/vk-on.png');
                 }
             }
 
             &:nth-child(2) {
-                background-image: url('/img/f-off.png');
+                background-image: url('../img/f-off.png');
                 width: 32px;
                 height: 32px;
 
                 &:hover {
-                    background-image: url('/img/f-on.png');
+                    background-image: url('../img/f-on.png');
                 }
             }
 
             &:nth-child(3) {
-                background-image: url('/img/git-off.png');
+                background-image: url('../img/git-off.png');
                 width: 32px;
                 height: 32px;
 
                 &:hover {
-                    background-image: url('/img/git-on.png');
+                    background-image: url('../img/git-on.png');
                 }
             }
 
             &:nth-child(4) {
-                background-image: url('/img/mail-off.png');
+                background-image: url('../img/mail-off.png');
                 width: 32px;
                 height: 32px;
 
                 &:hover {
-                    background-image: url('/img/mail-on.png');
+                    background-image: url('../img/mail-on.png');
                 }
             }
 
@@ -431,7 +435,9 @@ header {
     }
 
     .item4 .slider-image {
-        background-image: url('../img/workP.png');
+        background-image: url('../img/timer.png');
+        background-size: 45% 50%;
+      background-position-y: +50%;
     }
 }
 // contacts
@@ -570,6 +576,7 @@ header {
     cursor: pointer;
     width: 40px;
     height: 32px;
+    z-index: 300;
 
     .line {
         width: 40px;
@@ -608,7 +615,7 @@ header {
 }
 
 .trigger {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
 
     &:after {
         transform-origin: 100% 50%;
@@ -670,6 +677,9 @@ header {
             .descr {
                 float: left;
                 width: 70%;
+              p{
+                line-height: 25px;
+              }
             }
 
             .photo {
@@ -777,4 +787,12 @@ header {
   height: 2px;
   background-color: grey;
   display: none;
+}
+
+.show-menu{
+    left: 0;
+}
+
+.stop-scroll{
+    position: fixed;
 }
