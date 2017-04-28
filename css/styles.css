@@ -142,7 +142,7 @@ header {
   transform: translateX(-20px); }
 
 .container {
-  margin: 0 0 0 210px;
+   margin: 0 0 0 210px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -307,6 +307,9 @@ header {
   .slider .item3 .slider-image {
     background-image: url("../img/3.png"); }
   .slider .item4 .slider-image {
+    background-image: url("../img/phpBlog.png");
+    background-size: 100% 100%;}
+  .slider .item5 .slider-image {
     background-image: url("../img/timer.png");
     background-size: 45% 50%;
     background-position-y: +50%; }

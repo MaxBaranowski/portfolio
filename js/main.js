@@ -16,6 +16,20 @@ $(document).ready(function() {
 
     function menu_click(){
         var set = false;
+        var li_clicked = false;
+        var li = $('li'); 
+        [].forEach.call(li, function (item) { 
+            item.addEventListener('click', function(){
+                $('header').toggleClass('show-menu');
+                $('.line').toggleClass('trigger');
+                if(window.innerWidth <= 888){
+                    $('body').toggleClass('stop-scroll');
+                }
+                $('#menu').css('position','absolute');
+                set = false;
+                li_clicked = true;
+            }) 
+        });
         return function(){
             $('header').toggleClass('show-menu');
             $('.line').toggleClass('trigger');
@@ -24,12 +38,14 @@ $(document).ready(function() {
                     $('body').toggleClass('stop-scroll');
                     $('#menu').css('position','fixed');
                 },900);
-                return set = true;
+                if(li_clicked == true){
+                    set = true;
+                    li_clicked = false;
+                }
             }else{
-
                 $('body').toggleClass('stop-scroll');
                 $('#menu').css('position','absolute');
-                return set = false;
+                set = false;
             }
         }
     }
