@@ -500,7 +500,7 @@ header {
     .container .site-body .content .photo {
       float: right;
       margin: 0 5vw 0 0;
-      background-image: url("../img/photo.jpg");
+      background-image: url("../img/photo.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position-x: -3vw;
