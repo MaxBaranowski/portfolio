@@ -503,10 +503,11 @@ header {
       background-image: url("../img/photo.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position-x: -3vw;
+/*       background-position-x: -3vw; */
       width: 15vw;
       height: 15vw;
-      border-radius: 200px; }
+/*       border-radius: 200px;*/
+      }
     .container .site-body .content a {
       text-decoration: none; }
     .container .site-body .content span {
